@@ -50,8 +50,7 @@ function App() {
   };
 
   const formatQuestion = (question) => {
-    const opponent = teams.evaluatedTeam === teams.team1 ? teams.team2 : teams.team1;
-    return question.replace(/{team}/g, teams.evaluatedTeam).replace(/{opponent}/g, opponent);
+    return question.replace(/{team}/g, '').replace(/{opponent}/g, '');
   };
 
   return (
@@ -61,22 +60,24 @@ function App() {
         <p>Choose a team in an upcoming Counter Strike match and answer 15 true or false questions. If the majority of the answers are false the team loses. Use recent results and stats if possible.</p>
       </div>
       <div className="content">
-        {!teams.evaluatedTeam ? (
-          <TeamInput onSubmit={handleTeamSubmit} />
-        ) : !showResult ? (
-          <QuestionForm
-            question={formatQuestion(questions[currentQuestion])}
-            onAnswer={handleAnswer}
-            questionNumber={currentQuestion + 1}
-            totalQuestions={questions.length}
-          />
-        ) : (
-          <Result
-            teams={teams}
-            answers={answers}
-            onReset={resetPrediction}
-          />
-        )}
+      {!teams.evaluatedTeam ? (
+        <TeamInput onSubmit={handleTeamSubmit} />
+      ) : !showResult ? (
+        <QuestionForm
+          questions={questions.map(q => formatQuestion(q))}
+          onSubmit={(answers) => {
+            setAnswers(answers);
+            setShowResult(true);
+          }}
+          teams={teams}
+        />
+      ) : (
+        <Result
+          teams={teams}
+          answers={answers}
+          onReset={resetPrediction}
+        />
+      )}
       </div>
     </div>
   );
