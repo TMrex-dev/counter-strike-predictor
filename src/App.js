@@ -33,14 +33,8 @@ function App() {
     setTeams({ team1, team2, evaluatedTeam });
   };
 
-  const handleAnswer = (answer) => {
-    setAnswers([...answers, answer]);
-    if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
-      setShowResult(true);
-    }
-  };
+
+ 
 
   const resetPrediction = () => {
     setTeams({ team1: '', team2: '', evaluatedTeam: '' });
