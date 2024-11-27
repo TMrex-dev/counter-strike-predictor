@@ -6,21 +6,21 @@ import Header from './Header';
 import './App.css';
 
 const questions = [
-  "Sufficient Practice: {team} has had significant time to practice before coming into the tournament.",
-  "No Role Clashes: Roles within {team} are clear with no problematic overlaps.",
-  "No Internal Drama: Players in {team} get along and the environment is positive.",
+  "Sufficient Practice: The team has had significant time to practice before coming into the tournament.",
+  "No Role Clashes: Roles within the team are clear with no problematic overlaps.",
+  "No Internal Drama: Players in the team get along and the environment is positive.",
   "Effective support group: The coach, analysts, and sports psychologists of {team} are present and are helpful to the players.",
-  "Better record against opposing team: {team} has overall better head-to-head or winning record against {opponent}.",
-  "No bad record against opposing team: {team} does not have a noticeable worse record against {opponent}.",
-  "Strong core: There exists at least 3 players in {team} with good to excellent impact against {opponent}'s level of competition or better impact than {opponent}.",
-  "Strong support group: Including the strong core, there exists at least 4 players in {team} with decent impact against {opponent}'s level of competition better impact against {opponent}.",
-  "Unknown quantity: {team} has not been extensively studied or has a large sample of games to be looked at.",
-  "Major win rate: {team} has a significant high win rate of 62% or higher. Adjust for skew.",
-  "Passable win rate: {team} does not have a win rate lower than 53%.",
-  "{team}'s permaban is effective, banning one of {opponent}'s best maps.",
-  "{team} has a better win rate on the majority of the maps. Adjust for skew.",
-  "{team} has had more time to prepare for the match than {opponent}.",
-  "{team} has considerably more experience than {opponent}."
+  "Better record against opposing team: Team has overall better head-to-head or winning record against the opposing team.",
+  "No bad record against opposing team: Team does not have a noticeable worse record against the opposing team.",
+  "Strong core: There exists at least 3 players in the team with good to excellent impact against the opposing team level of competition.",
+  "Strong support group: Including the strong core, there exists at least 4 players in the team with decent impact against their opponent's level of competition.",
+  "Unknown quantity: The team has not been extensively studied or has a large sample of games to be looked at.",
+  "Major win rate: The team has a significant high win rate of 60% or higher. Adjust for skew.",
+  "Passable win rate: The team does not have a win rate lower than 53%.",
+  "The team's permaban is effective, banning one of their opponent's best maps.",
+  "The team has a better win rate on the majority of the maps. Adjust for skew.",
+  "The team has had more time to prepare for the match than the opposing team",
+  "The team has considerably more experience than the opposing team."
 ];
 
 function App() {
