@@ -16,7 +16,7 @@ const questions = [
   "Strong support group: Including the strong core, there exists at least 4 players in the team with decent impact against their opponent's level of competition.",
   "Unknown quantity: The team has not been extensively studied or has a large sample of games to be looked at.",
   "Major win rate: The team has a significant high win rate of 60% or higher. Adjust for skew.",
-  "Passable win rate: The team does not have a win rate lower than 53%.",
+  "Passable win rate: The team does not have a win rate lower than 50%.",
   "The team's permaban is effective, banning one of their opponent's best maps.",
   "The team has a better win rate on the majority of the maps. Adjust for skew.",
   "The team has had more time to prepare for the match than the opposing team",
