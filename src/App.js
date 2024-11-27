@@ -38,7 +38,6 @@ function App() {
   const resetPrediction = () => {
     setTeams({ team1: '', team2: '', evaluatedTeam: '' });
     setAnswers([]);
-    setCurrentQuestion(0);
     setShowResult(false);
   };
 
