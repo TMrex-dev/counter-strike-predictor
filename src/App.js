@@ -26,7 +26,6 @@ const questions = [
 function App() {
   const [teams, setTeams] = useState({ team1: '', team2: '', evaluatedTeam: '' });
   const [answers, setAnswers] = useState([]);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showResult, setShowResult] = useState(false);
 
   const handleTeamSubmit = (team1, team2, evaluatedTeam) => {
